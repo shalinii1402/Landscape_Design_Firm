@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GreenScape Landscape Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon/favicon.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header-placeholder"></header>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="background-image: url('https://images.unsplash.com/photo-1600607687644-c7171b42498f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Partner With GreenScape</h1>
+            <p class="fade-in">Our design team is ready to help you define and realize your ideal outdoor living space.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section class="container" style="background-color: var(--beige);">
+        <div>
+            <div class="section-header fade-in">
+                <h2>Let's Connect</h2>
+                <p>Whether you have a specific project in mind or you’re just beginning to explore the possibilities,
+                    we’d
+                    love to hear from you. Reach out to our design studio today and let's start a conversation about
+                    your
+                    ideal outdoor environment.</p>
+            </div>
+            <div style="display: flex; gap: 60px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;" class="fade-in">
+                    <h3 style="margin-bottom: 30px;">Contact Information</h3>
+                    <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px;">
+                        <div
+                            style="background: var(--beige); padding: 15px; border-radius: 50%; color: var(--primary);">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Headquarters</h4>
+                            <p>123 Green Lane, Eco District<br>San Francisco, CA 94103</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px;">
+                        <div
+                            style="background: var(--beige); padding: 15px; border-radius: 50%; color: var(--primary);">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Direct Line</h4>
+                            <p>General: +1 (555) 123-4567<br>Support: +1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px;">
+                        <div
+                            style="background: var(--beige); padding: 15px; border-radius: 50%; color: var(--primary);">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Studio Hours</h4>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Weekends: By Appointment Only</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px;">
+                        <div
+                            style="background: var(--beige); padding: 15px; border-radius: 50%; color: var(--primary);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">General Inquiries</h4>
+                            <p>hello@greenscape.com<br>design@greenscape.com</p>
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 40px 0 20px;">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"
+                            style="background: var(--primary); color: white; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            style="background: var(--primary); color: white; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            style="background: var(--primary); color: white; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div style="flex: 1.5; min-width: 300px;" class="fade-in">
+                    <div class="form-container" style="width: 100%; max-width: 100%;">
+                        <h3 style="text-align: center; margin-bottom: 30px;">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="msg">Message *</label>
+                                <textarea id="msg" rows="6" required></textarea>
+                            </div>
+                            <div style="text-align: center; margin-top: 30px;">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="fade-in" style="padding: 50px 0;">
+        <div class="container">
+            <div
+                style="width: 100%; height: 500px; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); margin: 0 auto; max-width: 1200px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.245504561!2d-122.507640204439!3d37.75781500454156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container">
+        <div class="cta-section fade-in">
+            <h2>Ready to Talk?</h2>
+            <p>Our consultation experts are standing by. Let's start building your sanctuary today.</p>
+            <a href="consultation.html" class="btn btn-primary">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Consultation | GreenScape</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon/favicon.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header-placeholder"></header>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Design Consultation</h1>
+            <p class="fade-in">Every extraordinary landscape begins with a single, thoughtful conversation.</p>
+            <p class="fade-in" style="font-size: 1.1rem; opacity: 0.9;">Tell us about your project goals, your
+                lifestyle, and the unique potential of your site.</p>
+            <p class="fade-in" style="font-size: 1.1rem; opacity: 0.9;">Our design team is ready to help you define and
+                realize your ideal outdoor living space.</p>
+        </div>
+    </section>
+
+    <!-- Consultation Process -->
+    <section style="background-color: var(--beige);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>The Consultation Experience</h2>
+                <p>Your vision is our starting point. Our structured consultation process is designed to uncover your
+                    needs, assess your site's unique characteristics, and build a project roadmap that ensures complete
+                    satisfaction from day one.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <div class="fade-in"
+                    style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div
+                        style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-bottom: 25px;">
+                        1</div>
+                    <h3 style="margin-bottom: 15px;" class="card-title">Discovery Call</h3>
+                    <p>A 20-minute phone call to discuss your preliminary ideas, timeline, and budget to see if we're a
+                        good match.</p>
+                </div>
+                <div class="fade-in"
+                    style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div
+                        style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-bottom: 25px;">
+                        2</div>
+                    <h3 style="margin-bottom: 15px;" class="card-title">Site Analysis</h3>
+                    <p>Our lead architect visits your property to evaluate soil conditions, drainage, orientation, and
+                        existing features.</p>
+                </div>
+                <div class="fade-in"
+                    style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div
+                        style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-bottom: 25px;">
+                        3</div>
+                    <h3 style="margin-bottom: 15px;" class="card-title">Proposal Review</h3>
+                    <p>We present a customized project scope, initial design direction, and a detailed investment
+                        breakdown.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple FAQ Section -->
+    <section class="container">
+        <div class="section-header fade-in">
+            <h2>Common Questions</h2>
+            <p>We believe that informed clients make the best partners. Browse through our most frequently asked
+                questions to learn more about our timelines, construction management, and how we handle everything from
+                permitting to completion.</p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="fade-in mb-40">
+                <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">How long does a typical
+                    project take?</h4>
+                <p>Most residential projects move from consultation to final installation in 8 to 14 weeks, depending on
+                    complexity and material lead times.</p>
+            </div>
+            <div class="fade-in mb-40">
+                <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">Do you handle the entire
+                    construction process?</h4>
+                <p>Yes. We provide a "turn-key" service, managing everything from architectural design and permitting to
+                    full-scale construction and planting.</p>
+            </div>
+            <div class="fade-in mb-40">
+                <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">Is there a fee for the
+                    initial consultation?</h4>
+                <p>The initial 20-minute discovery call is free. On-site analysis and conceptual layout proposals are
+                    part of our paid Design Commencement phase.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Form Section -->
+    <section class="container">
+        <div class="section-header fade-in">
+            <h2>Book Your Consultation</h2>
+            <p>Our experts are ready to turn your landscape dreams into reality. Provide us with some initial details
+                about your property and goals, and we will schedule a deep-dive session to explore the possibilities
+                together.</p>
+        </div>
+        <div class="form-container fade-in">
+            <h3 style="text-align: center; margin-bottom: 30px;">Request Details</h3>
+            <form id="consultationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div>
+                        <label for="location">Project Location</label>
+                        <input type="text" id="location" name="location" placeholder="City, State">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="projectType">Project Type *</label>
+                    <select id="projectType" name="projectType" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="residential">Residential Garden</option>
+                        <option value="commercial">Commercial Landscape</option>
+                        <option value="rooftop">Rooftop / Terrace</option>
+                        <option value="renovation">Renovation / Makeover</option>
+                    </select>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Approximate Budget Range *</label>
+                    <select id="budget" name="budget" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="under-5k">Under $5,000</option>
+                        <option value="5k-15k">$5,000 - $15,000</option>
+                        <option value="15k-50k">$15,000 - $50,000</option>
+                        <option value="over-50k">$50,000 +</option>
+                    </select>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Description *</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Tell us more about your dream landscape..." required></textarea>
+                    <span class="error-msg"></span>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" class="btn btn-primary">Send Request</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container">
+        <div class="cta-section fade-in">
+            <h2>Not Ready Yet?</h2>
+            <p>We invite you to take your time and find inspiration in our curated landscape collections.</p>
+            <p style="opacity: 0.8; margin-top: 5px;">View how we blend functionality with the natural aesthetics of the
+                site.</p>
+            <p style="opacity: 0.8; margin-bottom: 30px;">Our portfolio showcases the diverse range of styles we master.
+            </p>
+            <a href="portfolio.html" class="btn btn-outline"
+                style="border: 2px solid var(--primary); color: var(--primary);">View Our Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

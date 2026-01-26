@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenScape | Premium Landscape Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon/favicon.png">
+    <style>
+        .hero-premium {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1590059388143-690226c7104a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-premium h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 768px) {
+            .hero-premium h1 {
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header-placeholder"></header>
+
+    <!-- Hero Section -->
+    <section class="hero-premium hero"
+        style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h1 class="fade-in">Exquisite Gardens</h1>
+            <p class="fade-in" style="font-size: 1.5rem; margin-top: 20px;">Elite landscape architecture for the
+                discerning homeowner.</p>
+            <div style="margin-top: 40px;" class="fade-in">
+                <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                <a href="consultation.html" class="btn btn-outline"
+                    style="border-color: white; color: white; margin-left: 20px;">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Philosophy -->
+    <section class="container">
+        <div class="grid-2">
+            <div class="fade-in">
+                <img src="https://images.pexels.com/photos/33738275/pexels-photo-33738275.jpeg" alt="Design Philosophy"
+                    class="responsive-img" style="border-radius: 0 100px 0 100px;">
+            </div>
+            <div class="fade-in content-center">
+                <div class="section-header" style="text-align: left; margin: 0 0 30px 0;">
+                    <h2 style="font-size: 2.5rem;">Our Design Philosophy</h2>
+                    <p>We believe that an exceptional garden is not just a collection of plants, but a profound
+                        extension of the soul and a reflection of architectural intent. Our holistic approach focus on
+                        geometric symmetry, rich texture, and the seamless transition between indoor comfort and outdoor
+                        serenity.</p>
+                </div>
+                <div style="width: 100%; max-width: 500px;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                        <span>Harmonious integration with architecture</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                        <span>Sustainable and locally sourced materials</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 30px;">
+                        <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                        <span>Timeless aesthetics that grow more beautiful with age</span>
+                    </div>
+                </div>
+                <div class="btn-wrapper btn-center">
+                    <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Projects (Horizontal Scroll) -->
+    <section style="background-color: var(--beige);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Signature Projects</h2>
+                <p>Step into our world of exclusive landscape developments, where luxury meets environmental
+                    responsibility. We specialize in large-scale residential estates that require a masterful blend of
+                    privacy, aesthetics, and high-end outdoor amenities.</p>
+            </div>
+            <div class="gallery-wrapper fade-in">
+                <div class="gallery-item project-card">
+                    <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 1">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                        <h3>The Vista Estate</h3>
+                        <p>Modern Minimalism</p>
+                    </div>
+                </div>
+                <div class="gallery-item project-card">
+                    <img src="https://images.pexels.com/photos/35171484/pexels-photo-35171484.jpeg" alt="Project 2">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                        <h3>Mediterranean Retreat</h3>
+                        <p>Classic Elegance</p>
+                    </div>
+                </div>
+                <div class="gallery-item project-card">
+                    <img src="https://images.pexels.com/photos/11739324/pexels-photo-11739324.jpeg" alt="Project 3">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                        <h3>Rooftop Sanctuary</h3>
+                        <p>Urban Greenery</p>
+                    </div>
+                </div>
+                <div class="gallery-item project-card">
+                    <img src="https://images.pexels.com/photos/29282520/pexels-photo-29282520.jpeg" alt="Project 4">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                        <h3>Alpine Garden</h3>
+                        <p>Naturalistic Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="container">
+        <div class="section-header fade-in">
+            <h2>The Design Journey</h2>
+            <p>Our process is built on transparency, collaboration, and meticulous attention to detail. We guide you
+                through every phase—from the initial discovery and conceptual mood boards to the final execution and
+                ongoing seasonal care.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item left fade-in">
+                <div class="timeline-content">
+                    <h3>01. Consultation</h3>
+                    <p>Understanding your vision, lifestyle, and the unique characteristics of your site.</p>
+                </div>
+            </div>
+            <div class="timeline-item right fade-in">
+                <div class="timeline-content">
+                    <h3>02. Concept Design</h3>
+                    <p>Detailed mood boards, material palettes, and 3D architectural visualizations.</p>
+                </div>
+            </div>
+            <div class="timeline-item left fade-in">
+                <div class="timeline-content">
+                    <h3>03. Execution</h3>
+                    <p>Expert craftsmanship and precision building by our dedicated team.</p>
+                </div>
+            </div>
+            <div class="timeline-item right fade-in">
+                <div class="timeline-content">
+                    <h3>04. Maintenance</h3>
+                    <p>Ongoing care to ensure your landscape thrives and matures gracefully.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="background-color: var(--primary); color: white;">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 style="color: white;">What Our Clients Say</h2>
+                <p style="color: rgba(255,255,255,0.8);">Hear from the people who now call our gardens home.</p>
+            </div>
+            <div class="testimonials-grid fade-in">
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                            alt="Jane Doe">
+                        <div>
+                            <h4 style="color: var(--primary);">Jane Doe</h4>
+                            <p style="color: grey; font-size: 0.8rem;">Estate Owner</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text);">"GreenScape transformed our backyard into a true paradise. Their
+                        attention to detail and professional approach were exceptional."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                            alt="John Smith">
+                        <div>
+                            <h4 style="color: var(--primary);">John Smith</h4>
+                            <p style="color: grey; font-size: 0.8rem;">Homeowner</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text);">"The design process was collaborative and inspiring. We now have a
+                        garden that is the envy of the neighborhood."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                            alt="Sara Lee">
+                        <div>
+                            <h4 style="color: var(--primary);">Sara Lee</h4>
+                            <p style="color: grey; font-size: 0.8rem;">Modernist Architect</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text);">"A perfect blend of architecture and biology. Their choice of
+                        materials and plants is truly masterful."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="container">
+        <div class="cta-section fade-in">
+            <h2>Let’s Design Your Dream Landscape</h2>
+            <p>Your sanctuary is just a consultation away. Let's create something extraordinary together.</p>
+            <a href="consultation.html" class="btn btn-primary">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Modal for Signature Projects -->
+    <div id="projectModal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; justify-content: center; align-items: center; padding: 20px;">
+        <span class="close-modal"
+            style="position: absolute; top: 30px; right: 40px; color: white; font-size: 3rem; cursor: pointer;">&times;</span>
+        <div
+            style="max-width: 1000px; background: var(--white); border-radius: 20px; overflow: hidden; display: flex; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <img class="modal-img" src="" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="flex: 1; min-width: 300px; padding: 50px;">
+                <h2 class="modal-title" style="margin-bottom: 20px;"></h2>
+                <p class="modal-desc" style="font-size: 1.1rem; line-height: 1.7;"></p>
+                <a href="consultation.html" class="btn btn-primary" style="margin-top: 30px;">Inquire About This
+                    Design</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
