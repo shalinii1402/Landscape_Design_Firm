@@ -456,6 +456,17 @@ footer {
     margin-bottom: 12px;
 }
 
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.footer-links ul li a:hover {
+    color: var(--accent);
+    transform: translateX(5px);
+}
+
 .social-icons {
     display: flex;
     gap: 15px;
@@ -464,12 +475,12 @@ footer {
 
 .social-icons a {
     font-size: 1.2rem;
-    color: var(--text);
+    color: rgba(255, 255, 255, 0.9);
     transition: var(--transition);
 }
 
 .social-icons a:hover {
-    color: var(--primary);
+    color: var(--accent);
     transform: translateY(-3px);
 }
 
