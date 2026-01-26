@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Consultation | GreenScape</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
     <link rel="apple-touch-icon" href="assets/favicon/favicon.png">
 </head>
@@ -72,99 +72,107 @@
     </section>
 
     <!-- Simple FAQ Section -->
-    <section class="container">
-        <div class="section-header fade-in">
-            <h2>Common Questions</h2>
-            <p>We believe that informed clients make the best partners. Browse through our most frequently asked
-                questions to learn more about our timelines, construction management, and how we handle everything from
-                permitting to completion.</p>
-        </div>
-        <div style="max-width: 800px; margin: 0 auto;">
-            <div class="fade-in mb-40">
-                <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">How long does a typical
-                    project take?</h4>
-                <p>Most residential projects move from consultation to final installation in 8 to 14 weeks, depending on
-                    complexity and material lead times.</p>
+    <section>
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Common Questions</h2>
+                <p>We believe that informed clients make the best partners. Browse through our most frequently asked
+                    questions to learn more about our timelines, construction management, and how we handle everything
+                    from
+                    permitting to completion.</p>
             </div>
-            <div class="fade-in mb-40">
-                <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">Do you handle the entire
-                    construction process?</h4>
-                <p>Yes. We provide a "turn-key" service, managing everything from architectural design and permitting to
-                    full-scale construction and planting.</p>
-            </div>
-            <div class="fade-in mb-40">
-                <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">Is there a fee for the
-                    initial consultation?</h4>
-                <p>The initial 20-minute discovery call is free. On-site analysis and conceptual layout proposals are
-                    part of our paid Design Commencement phase.</p>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="fade-in mb-40">
+                    <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">How long does a typical
+                        project take?</h4>
+                    <p>Most residential projects move from consultation to final installation in 8 to 14 weeks,
+                        depending on
+                        complexity and material lead times.</p>
+                </div>
+                <div class="fade-in mb-40">
+                    <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">Do you handle the entire
+                        construction process?</h4>
+                    <p>Yes. We provide a "turn-key" service, managing everything from architectural design and
+                        permitting to
+                        full-scale construction and planting.</p>
+                </div>
+                <div class="fade-in mb-40">
+                    <h4 style="color: var(--primary); margin-bottom: 12px; font-size: 1.25rem;">Is there a fee for the
+                        initial consultation?</h4>
+                    <p>The initial 20-minute discovery call is free. On-site analysis and conceptual layout proposals
+                        are
+                        part of our paid Design Commencement phase.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Consultation Form Section -->
-    <section class="container">
-        <div class="section-header fade-in">
-            <h2>Book Your Consultation</h2>
-            <p>Our experts are ready to turn your landscape dreams into reality. Provide us with some initial details
-                about your property and goals, and we will schedule a deep-dive session to explore the possibilities
-                together.</p>
-        </div>
-        <div class="form-container fade-in">
-            <h3 style="text-align: center; margin-bottom: 30px;">Request Details</h3>
-            <form id="consultationForm">
-                <div class="form-group">
-                    <label for="fullName">Full Name *</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
-                    <span class="error-msg"></span>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
-                    <span class="error-msg"></span>
-                </div>
-                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                    <div>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+    <section>
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Book Your Consultation</h2>
+                <p>Our experts are ready to turn your landscape dreams into reality. Provide us with some initial
+                    details
+                    about your property and goals, and we will schedule a deep-dive session to explore the possibilities
+                    together.</p>
+            </div>
+            <div class="form-container fade-in">
+                <h3 style="text-align: center; margin-bottom: 30px;">Request Details</h3>
+                <form id="consultationForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+                        <span class="error-msg"></span>
                     </div>
-                    <div>
-                        <label for="location">Project Location</label>
-                        <input type="text" id="location" name="location" placeholder="City, State">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                        <span class="error-msg"></span>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="projectType">Project Type *</label>
-                    <select id="projectType" name="projectType" required>
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="residential">Residential Garden</option>
-                        <option value="commercial">Commercial Landscape</option>
-                        <option value="rooftop">Rooftop / Terrace</option>
-                        <option value="renovation">Renovation / Makeover</option>
-                    </select>
-                    <span class="error-msg"></span>
-                </div>
-                <div class="form-group">
-                    <label for="budget">Approximate Budget Range *</label>
-                    <select id="budget" name="budget" required>
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="under-5k">Under $5,000</option>
-                        <option value="5k-15k">$5,000 - $15,000</option>
-                        <option value="15k-50k">$15,000 - $50,000</option>
-                        <option value="over-50k">$50,000 +</option>
-                    </select>
-                    <span class="error-msg"></span>
-                </div>
-                <div class="form-group">
-                    <label for="message">Project Description *</label>
-                    <textarea id="message" name="message" rows="5"
-                        placeholder="Tell us more about your dream landscape..." required></textarea>
-                    <span class="error-msg"></span>
-                </div>
-                <div style="text-align: center; margin-top: 30px;">
-                    <button type="submit" class="btn btn-primary">Send Request</button>
-                </div>
-            </form>
-        </div>
+                    <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div>
+                            <label for="location">Project Location</label>
+                            <input type="text" id="location" name="location" placeholder="City, State">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectType">Project Type *</label>
+                        <select id="projectType" name="projectType" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="residential">Residential Garden</option>
+                            <option value="commercial">Commercial Landscape</option>
+                            <option value="rooftop">Rooftop / Terrace</option>
+                            <option value="renovation">Renovation / Makeover</option>
+                        </select>
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Approximate Budget Range *</label>
+                        <select id="budget" name="budget" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="under-5k">Under $5,000</option>
+                            <option value="5k-15k">$5,000 - $15,000</option>
+                            <option value="15k-50k">$15,000 - $50,000</option>
+                            <option value="over-50k">$50,000 +</option>
+                        </select>
+                        <span class="error-msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Description *</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell us more about your dream landscape..." required></textarea>
+                        <span class="error-msg"></span>
+                    </div>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary">Send Request</button>
+                    </div>
+                </form>
+            </div>
     </section>
 
     <!-- CTA Section -->

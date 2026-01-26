@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="social-icons">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
                             <a href="#"><i class="fab fa-pinterest"></i></a>
                         </div>
                     </div>
