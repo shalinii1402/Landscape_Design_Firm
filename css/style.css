@@ -569,7 +569,7 @@ footer {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
 
@@ -1091,7 +1091,8 @@ footer {
     /* Mobile Header Fixes */
     nav {
         display: flex;
-        justify-content: space-between; /* Fallback */
+        justify-content: space-between;
+        /* Fallback */
         align-items: center;
     }
 
@@ -1116,7 +1117,8 @@ footer {
         display: flex;
         align-items: center;
         gap: 0;
-        margin-left: auto; /* Push to right */
+        margin-left: auto;
+        /* Push to right */
     }
 
     .nav-actions .btn {
