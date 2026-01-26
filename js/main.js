@@ -87,8 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (headerPlaceholder) headerPlaceholder.innerHTML = headerHTML;
         if (footerPlaceholder) footerPlaceholder.innerHTML = footerHTML;
 
+        // Set Active Nav Link
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        const isAuthPage = currentPath === 'login.html' || currentPath === 'signup.html';
+
         // Inject Back to Top button as fixed element
-        if (!document.querySelector('.back-to-top-btn')) {
+        if (!isAuthPage && !document.querySelector('.back-to-top-btn')) {
             const backToTopBtn = document.createElement('a');
             backToTopBtn.href = '#';
             backToTopBtn.className = 'back-to-top-btn';
@@ -96,8 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.appendChild(backToTopBtn);
         }
 
-        // Set Active Nav Link
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
         const navItems = document.querySelectorAll('.nav-links a');
         navItems.forEach(item => {
             if (item.getAttribute('data-page') === currentPath) {
