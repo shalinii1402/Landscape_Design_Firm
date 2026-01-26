@@ -47,7 +47,9 @@
 
         <div class="portfolio-grid">
             <!-- Project 1 -->
-            <div class="portfolio-item fade-in project-card" data-category="residential">
+            <div class="portfolio-item fade-in project-card" data-category="residential"
+                data-details-1="A complete transformation of a suburban estate into a modern sanctuary."
+                data-details-2="Features include a minimalist water feature, drought-tolerant native plantings, and a custom pergola for outdoor dining.">
                 <div class="zoom-img" style="position: relative; overflow: hidden; border-radius: 20px;">
                     <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                         alt="Project 1" style="width: 100%; height: 350px; object-fit: cover;">
@@ -59,7 +61,9 @@
                 </div>
             </div>
             <!-- Project 2 -->
-            <div class="portfolio-item fade-in project-card" data-category="commercial">
+            <div class="portfolio-item fade-in project-card" data-category="commercial"
+                data-details-1="Designing a refreshing outdoor break area for a tech campus."
+                data-details-2="Incorporates ample seating, shaded walkways, and low-maintenance greenery to boost employee well-being.">
                 <div class="zoom-img" style="position: relative; overflow: hidden; border-radius: 20px;">
                     <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                         alt="Project 2" style="width: 100%; height: 350px; object-fit: cover;">
@@ -71,7 +75,9 @@
                 </div>
             </div>
             <!-- Project 3 -->
-            <div class="portfolio-item fade-in project-card" data-category="rooftop">
+            <div class="portfolio-item fade-in project-card" data-category="rooftop"
+                data-details-1="Maximizing limited space to create a lush, private rooftop retreat."
+                data-details-2="Includes vertical gardens, lightweight container plantings, and ambient lighting for evening entertainment.">
                 <div class="zoom-img" style="position: relative; overflow: hidden; border-radius: 20px;">
                     <img src="https://images.pexels.com/photos/2972890/pexels-photo-2972890.jpeg" alt="Project 3"
                         style="width: 100%; height: 350px; object-fit: cover;">
@@ -83,7 +89,9 @@
                 </div>
             </div>
             <!-- Project 4 -->
-            <div class="portfolio-item fade-in project-card" data-category="residential">
+            <div class="portfolio-item fade-in project-card" data-category="residential"
+                data-details-1="Bringing the warmth of the Mediterranean to a private villa."
+                data-details-2="Showcases terracotta paving, aromatic herbs like lavender and rosemary, and a classic central fountain.">
                 <div class="zoom-img" style="position: relative; overflow: hidden; border-radius: 20px;">
                     <img src="https://images.pexels.com/photos/16100202/pexels-photo-16100202.jpeg" alt="Project 4"
                         style="width: 100%; height: 350px; object-fit: cover;">
@@ -95,7 +103,9 @@
                 </div>
             </div>
             <!-- Project 5 -->
-            <div class="portfolio-item fade-in project-card" data-category="commercial">
+            <div class="portfolio-item fade-in project-card" data-category="commercial"
+                data-details-1="Revitalizing a city park with diverse botanical collections."
+                data-details-2="Focuses on biodiversity, educational signage, and accessible pathways for community enjoyment.">
                 <div class="zoom-img" style="position: relative; overflow: hidden; border-radius: 20px;">
                     <img src="https://images.pexels.com/photos/14189268/pexels-photo-14189268.jpeg" alt="Project 5"
                         style="width: 100%; height: 350px; object-fit: cover;">
@@ -107,7 +117,9 @@
                 </div>
             </div>
             <!-- Project 6 -->
-            <div class="portfolio-item fade-in project-card" data-category="rooftop">
+            <div class="portfolio-item fade-in project-card" data-category="rooftop"
+                data-details-1="An eco-friendly rooftop initiative to reduce urban heat islands."
+                data-details-2="Features extensive green roofing, solar-powered lighting, and rainwater harvesting systems.">
                 <div class="zoom-img" style="position: relative; overflow: hidden; border-radius: 20px;">
                     <img src="https://images.pexels.com/photos/13627811/pexels-photo-13627811.jpeg" alt="Project 6"
                         style="width: 100%; height: 350px; object-fit: cover;">
@@ -208,15 +220,23 @@
             <div style="flex: 1; min-width: 300px;">
                 <img class="modal-img" src="" alt="Project Image" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
-            <div style="flex: 1; min-width: 300px; padding: 40px;">
+            <div
+                style="flex: 1; min-width: 300px; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
                 <h2 class="modal-title"></h2>
-                <p class="modal-desc" style="margin-top: 20px; line-height: 1.8;"></p>
-                <div style="margin-top: 30px;">
-                    <h4>Project Details:</h4>
-                    <p>Designed with sustainability in mind, this project features native plants, smart irrigation, and
-                        custom hardscaping elements.</p>
+                <p class="modal-desc"
+                    style="margin-top: 10px; font-weight: 500; font-size: 1.1rem; color: var(--primary);"></p>
+
+                <div style="margin-top: 25px;">
+                    <h4>Project Concept:</h4>
+                    <p class="modal-details-1" style="margin-bottom: 15px; color: var(--text);"></p>
+
+                    <h4>Key Features:</h4>
+                    <p class="modal-details-2" style="color: var(--text);"></p>
                 </div>
-                <a href="consultation.html" class="btn btn-primary" style="margin-top: 30px;">Request a Quote</a>
+
+                <div class="btn-wrapper btn-center" style="margin-top: auto; padding-top: 30px;">
+                    <a href="consultation.html" class="btn btn-primary">Request a Quote</a>
+                </div>
             </div>
         </div>
     </div>

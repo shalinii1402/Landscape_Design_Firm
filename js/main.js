@@ -200,10 +200,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 const title = card.querySelector('h3').innerText;
                 const desc = card.querySelector('p').innerText;
                 const imgSrc = card.querySelector('img').src;
+                const details1 = card.getAttribute('data-details-1') || 'Detailed project concept unavailable.';
+                const details2 = card.getAttribute('data-details-2') || 'Specific features unavailable.';
 
                 modal.querySelector('.modal-title').innerText = title;
                 modal.querySelector('.modal-desc').innerText = desc;
                 modal.querySelector('.modal-img').src = imgSrc;
+                modal.querySelector('.modal-details-1').innerText = details1;
+                modal.querySelector('.modal-details-2').innerText = details2;
 
                 modal.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
@@ -213,17 +217,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (closeModal) {
             closeModal.addEventListener('click', () => {
                 modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
+                document.body.style.overflow = 'auto'; // Re-enable scroll
             });
         }
-
-        window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        });
     }
+
+    const modalWindowListener = (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    };
+    window.addEventListener('click', modalWindowListener);
 
     // Portfolio Filtering
     const filterBtns = document.querySelectorAll('.filter-btn');
