@@ -291,6 +291,78 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Slider Functionality
+    const initSliders = () => {
+        const sliders = document.querySelectorAll('.slider-track');
+
+        sliders.forEach(slider => {
+            const container = slider.parentElement;
+            const prevBtn = container.querySelector('.prev-btn');
+            const nextBtn = container.querySelector('.next-btn');
+            const dotsContainer = container.querySelector('.slider-dots');
+
+            if (!prevBtn || !nextBtn) return;
+
+            const getScrollInfo = () => {
+                const items = Array.from(slider.children);
+                if (items.length === 0) return { itemWidth: 0, maxScroll: 0 };
+                const itemWidth = items[0].offsetWidth + parseInt(window.getComputedStyle(slider).gap || 0);
+                const maxScroll = slider.scrollWidth - slider.clientWidth;
+                return { itemWidth, maxScroll, itemsCount: items.length };
+            };
+
+            const updateControls = () => {
+                const { maxScroll, itemsCount, itemWidth } = getScrollInfo();
+                const scrollLeft = slider.scrollLeft;
+
+                prevBtn.disabled = scrollLeft <= 5;
+                nextBtn.disabled = scrollLeft >= maxScroll - 5;
+
+                if (dotsContainer) {
+                    const activeIndex = Math.round(scrollLeft / itemWidth);
+                    const dots = dotsContainer.querySelectorAll('.slider-dot');
+                    dots.forEach((dot, idx) => {
+                        dot.classList.toggle('active', idx === activeIndex);
+                    });
+                }
+            };
+
+            // Create dots if container exists and is empty
+            if (dotsContainer && dotsContainer.children.length === 0) {
+                const { itemsCount } = getScrollInfo();
+                for (let i = 0; i < itemsCount; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+                    dot.addEventListener('click', () => {
+                        const { itemWidth } = getScrollInfo();
+                        slider.scrollTo({
+                            left: i * itemWidth,
+                            behavior: 'smooth'
+                        });
+                    });
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            prevBtn.addEventListener('click', () => {
+                const { itemWidth } = getScrollInfo();
+                slider.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                const { itemWidth } = getScrollInfo();
+                slider.scrollBy({ left: itemWidth, behavior: 'smooth' });
+            });
+
+            slider.addEventListener('scroll', updateControls);
+            // Initial check
+            setTimeout(updateControls, 100);
+            window.addEventListener('resize', updateControls);
+        });
+    };
+
+    initSliders();
+
     // Password Visibility Toggle
     const passwordToggles = document.querySelectorAll('.password-toggle');
     passwordToggles.forEach(toggle => {
