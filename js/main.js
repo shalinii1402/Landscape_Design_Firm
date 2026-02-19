@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="container">
                 <div class="footer-grid">
                     <div class="fade-in">
-                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
-                            <i class="fas fa-leaf" style="font-size: 1.5rem; color: var(--accent);"></i>
-                            <span style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--white);">GreenScape</span>
-                        </div>
-                        <p style="color: rgba(255, 255, 255, 0.8);">Expert landscape design and planning for the modern home. Bringing nature to your doorstep.</p>
+                        <a href="index.html" class="logo footer-logo">
+                            <i class="fas fa-leaf"></i>
+                            <span>GreenScape</span>
+                        </a>
+                        <p style="opacity: 0.8; margin-top: 15px;">Expert landscape design and planning for the modern home. Bringing nature to your doorstep.</p>
                         <div class="social-icons">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>

@@ -286,14 +286,20 @@ nav {
     gap: 10px;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--primary) !important;
     font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
+}
+
+.logo i {
+    color: var(--primary) !important;
 }
 
 .nav-links a {
     font-weight: 500;
     color: var(--text);
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-links a::after {
@@ -310,6 +316,13 @@ nav {
 .nav-links a:hover::after,
 .nav-links a.active::after {
     width: 100%;
+}
+
+/* Logo specific spacing for footer and auth pages */
+.footer-logo,
+.auth-logo {
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .btn {
@@ -490,10 +503,11 @@ nav {
 
 /* Footer */
 footer {
-    background: var(--primary);
-    color: var(--white);
+    background: var(--white);
+    color: var(--text);
     padding: 80px 0 20px;
     border-top: 5px solid var(--accent);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .footer-grid {
@@ -503,15 +517,14 @@ footer {
     margin-bottom: 50px;
 }
 
-.footer-logo {
-    font-size: 2rem;
+.footer-logo-container {
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .footer-links h4 {
-    color: var(--accent);
+    color: var(--primary);
     margin-bottom: 25px;
+    font-size: 1.2rem;
 }
 
 .footer-links ul li {
@@ -519,13 +532,14 @@ footer {
 }
 
 .footer-links ul li a {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text);
+    opacity: 0.8;
     transition: var(--transition);
     display: inline-block;
 }
 
 .footer-links ul li a:hover {
-    color: var(--accent);
+    color: var(--primary-light);
     transform: translateX(5px);
 }
 
@@ -537,12 +551,12 @@ footer {
 
 .social-icons a {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--primary);
     transition: var(--transition);
 }
 
 .social-icons a:hover {
-    color: var(--accent);
+    color: var(--primary-light);
     transform: translateY(-3px);
 }
 
@@ -551,10 +565,13 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--gray-light);
     margin-top: 30px;
     flex-wrap: wrap;
     gap: 20px;
+    color: var(--text);
+    opacity: 0.7;
+    font-size: 0.9rem;
 }
 
 /* Back to Top Button */
@@ -1058,7 +1075,7 @@ footer {
 }
 
 .nav-wrapper {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -1411,10 +1428,34 @@ footer {
     }
 }
 
-/* Hide mobile auth items on desktop */
-@media (min-width: 1025px) {
+/* Hide mobile auth items when desktop buttons are visible */
+@media (min-width: 769px) {
     .mobile-auth-item {
         display: none;
+    }
+}
+
+/* Tablet & Smaller Desktop Refinements */
+@media (max-width: 1100px) and (min-width: 769px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .nav-actions {
+        gap: 10px;
+    }
+
+    .nav-actions .btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
     }
 }
 
