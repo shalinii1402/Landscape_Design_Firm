@@ -506,7 +506,7 @@ footer {
     background: var(--white);
     color: var(--text);
     padding: 80px 0 20px;
-    border-top: 5px solid var(--accent);
+    border-top: 5px solid var(--primary);
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -869,11 +869,13 @@ footer {
 
 /* CTA Section Styles */
 .cta-section {
-    padding: 100px 0;
+    padding: 60px 40px;
     text-align: center;
     background: var(--white);
+    border: 2px solid var(--accent);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
-    margin: 40px auto;
+    margin: 20px auto;
     max-width: 1200px;
 }
 
@@ -1035,13 +1037,7 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.back-home {
-    display: inline-block;
-    margin-top: 20px;
-    color: var(--primary);
-    font-size: 0.9rem;
-    font-weight: 500;
-}
+
 
 @media (max-height: 700px) {
     .auth-page {
@@ -1070,9 +1066,7 @@ footer {
 }
 
 
-.back-home:hover {
-    text-decoration: underline;
-}
+
 
 .nav-wrapper {
     max-width: 1200px;
@@ -1130,7 +1124,7 @@ footer {
 .slider-container {
     position: relative;
     width: 100%;
-    margin: 40px auto;
+    margin: 20px auto;
     overflow: visible;
     /* Changed to visible for better mobile feel, but children will be clipped by a wrapper if needed */
 }
